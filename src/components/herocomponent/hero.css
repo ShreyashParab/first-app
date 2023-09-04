@@ -1,0 +1,101 @@
+
+.slider{
+    z-index: 1;
+    color: white;
+}
+
+.owl-carousel .owl-item img{
+    height: 500px;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 45%;
+    right: 3%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+ 
+.owl-carousel .owl-nav button.owl-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 45%;
+    left: 3%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+} 
+
+
+.slide-content{
+        position: absolute;
+        top: 30%;
+        right:15%;
+        width: 40%;
+        text-align: right;
+} 
+
+.slide-content .header{
+    margin-bottom: 15px;
+}
+
+.slide-content .description{
+    opacity: 0.8;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+ .slide-content .buttons{
+    margin-top: 5px;
+    background-color:cadetblue;
+    display: inline-block;
+    padding: 2px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    .owl-carousel .owl-item img{
+        height: 400px;
+    }
+    
+    .slide-content{
+        top: 25%;
+        width: 60%;   
+        text-align: center;
+        right: 20%;
+    }
+
+    .slide-content .header, .slide-content .description{
+        margin-bottom: 10px;
+    }
+
+    .slide-content .description{
+        font-size: small;
+    }
+
+    .slide-content .buttons{
+        padding: 2px 8px;
+        font-size: small;
+    }
+}
+
+

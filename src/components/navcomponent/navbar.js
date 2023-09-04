@@ -8,18 +8,25 @@ let toggleon = false
 const Navbar = () =>{
     
     function toggle(){
-        
-        if(toggleon == false)
+
+        const screenWidth = window.innerWidth
+        if(screenWidth <= 900)
         {
-            document.getElementById('links').classList.add('show')
-            document.getElementById('links').classList.remove('hide')
-            toggleon = true
+            if(toggleon == false)
+            {
+                document.getElementById('links').style.display='block'
+                toggleon = true
+            }
+            else{
+                document.getElementById('links').style.display='none'
+                toggleon = false
+            }
         }
         else{
-            document.getElementById('links').classList.add('hide')
-            document.getElementById('links').classList.remove('show')
-            toggleon = false
+            document.getElementById('links').style.display='block'
+            toggleon=false
         }
+        
     }
     return(
         <>
