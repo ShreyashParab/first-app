@@ -26,6 +26,7 @@ li{
     background-color: black;
     color: white;
     align-items: center;
+    /* width: 100%; */
 }
 
 ul li{
@@ -37,7 +38,6 @@ ul li{
 .links{
     align-items: center;
 }
-*/
 
 
 .nav .links ul{
@@ -75,16 +75,29 @@ ul li a:hover{
 }
 
 @media (max-width:900px){
+    .nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
     .nav .links{
         position: fixed;
         width: 100%;
         top: 60px;
         left: 0;
-        /* height: 30vh; */
+        height: 100vh;
         background-color: black;
         text-align: center;
         display: none;
         z-index: 2;
+    }
+
+    .nav .links ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
     }
 
     .toggleButton{
@@ -99,11 +112,23 @@ ul li a:hover{
     }
 
     .nav .links ul .search{
-        display: none;
+        margin-top: 10px;
     }
 
     .nav .social-media{
-        display: none;
+        display: block;
+        position: fixed;
+        top: 93%;
+        z-index: 3;
+        width: 100%;
+        left: 0;
+    }
+    
+    .nav .social-media ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .nav .links li .dropdown{
@@ -121,11 +146,7 @@ ul li a:hover{
 }
 
 @media (min-width: 901px) {
-    .nav .links {
-      display: block; 
-    }
-
-    .show{
+    .nav .links{
         display: block;
     }
 } 

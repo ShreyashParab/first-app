@@ -6,10 +6,13 @@ import "./navbar.css"
 let toggleon = false
 
 const Navbar = () =>{
-    
+    const screenWidth = window.innerWidth
+        if(screenWidth > 900)
+        {
+            document.getElementById('links').style.display='block'
+        }
     function toggle(){
 
-        const screenWidth = window.innerWidth
         if(screenWidth <= 900)
         {
             if(toggleon == false)
