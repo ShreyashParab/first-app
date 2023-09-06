@@ -1,7 +1,23 @@
+.hero{
+    background-color: #2a2a2a;
+    height: 48vh;
+}
 
 .slider{
     z-index: 1;
     color: white;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper1 , .image-wrapper2{
+    width: 100%;
 }
 
 .owl-carousel .owl-item img{
@@ -15,14 +31,9 @@
     width: 40px;
     color: white;
     position: absolute;
-    font-size: 30px;
-    top: 45%;
-    right: 3%;
-    background-color: black;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    border-radius: 50px; 
+    font-size: 40px;
+    top: 32%;
+    right: -7%;
     cursor: pointer;
 }
  
@@ -33,17 +44,15 @@
     width: 40px;
     color: white;
     position: absolute;
-    font-size: 30px;
-    top: 45%;
-    left: 3%;
-    background-color: black;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    border-radius: 50px;
+    font-size: 40px;
+    top: 32%;
+    left: -7%;
     cursor: pointer;
 } 
 
+.owl-dots{
+    display: none;
+}
 
 .slide-content{
         position: absolute;
@@ -83,6 +92,7 @@
         text-align: center;
         right: 20%;
     }
+
 
     .slide-content .header, .slide-content .description{
         margin-bottom: 10px;

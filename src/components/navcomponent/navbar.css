@@ -23,7 +23,7 @@ li{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: black;
+    background-color: #2a2a2a;
     color: white;
     align-items: center;
     /* width: 100%; */
@@ -39,6 +39,9 @@ ul li{
     align-items: center;
 }
 
+.active{
+    border-bottom: 2px solid white;
+}
 
 .nav .links ul{
     padding: 0;
@@ -51,7 +54,7 @@ ul li{
 }
 
 .nav .links li .dropdown{
-    background-color: black;
+    background-color: #2a2a2a;
     position: absolute;
     z-index: 999;
     display: none;
@@ -87,7 +90,7 @@ ul li a:hover{
         top: 60px;
         left: 0;
         height: 100vh;
-        background-color: black;
+        background-color: #2a2a2a;
         text-align: center;
         display: none;
         z-index: 2;
