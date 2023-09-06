@@ -96,6 +96,10 @@
     border: 1px double grey;
 }
 
+.slide-content .buttons:hover{
+    opacity: 0.8;
+}
+
 @media (max-width:600px){
     .hero{
         height: 40vh;
