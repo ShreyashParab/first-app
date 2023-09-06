@@ -1,6 +1,6 @@
 .hero{
     background-color: #2a2a2a;
-    height: 48vh;
+    height: 58vh;
 }
 
 .slider{
@@ -18,6 +18,10 @@
 
 .image-wrapper1 , .image-wrapper2{
     width: 100%;
+}
+
+.image-wrapper2 img{
+    filter: blur(20px);
 }
 
 .owl-carousel .owl-item img{
@@ -56,55 +60,103 @@
 
 .slide-content{
         position: absolute;
-        top: 30%;
-        right:15%;
+        top: 25%;
+        right:5%;
         width: 40%;
         text-align: right;
 } 
 
 .slide-content .header{
-    margin-bottom: 15px;
+    /* margin-bottom: 3px; */
+    font-size: 50px;
+}
+
+.slide-content .sub-header{
+    font-size: 16px;
+    opacity: 0.8;
+    letter-spacing: 3px;
 }
 
 .slide-content .description{
     opacity: 0.8;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     margin-bottom: 10px;
+    font-size: small;
+    margin-top: 3px;
 }
 
  .slide-content .buttons{
     margin-top: 5px;
-    background-color:cadetblue;
+    background-color:#2a2a2a;
     display: inline-block;
-    padding: 2px 20px;
-    border-radius: 5px;
+    padding: 3px 20px;
+    border-radius: 2px;
     cursor: pointer;
+    text-transform: uppercase;
+    border: 1px double grey;
 }
 
 @media (max-width:600px){
-    .owl-carousel .owl-item img{
-        height: 400px;
+    .hero{
+        height: 40vh;
     }
     
+    .slider{
+        width: 100%;
+    }
+
+    .owl-carousel .owl-item img{
+        height: 340px;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next{
+        right: 4%;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 4%;
+    }
+
     .slide-content{
-        top: 25%;
+        top: 20%;
         width: 60%;   
         text-align: center;
         right: 20%;
     }
 
+    .item .images .image-wrapper2 .slide-content .header{
+        font-size: 25px;
+    }
+
+    .item .images .image-wrapper2 .slide-content .sub-header{
+        font-size: 15px;
+        letter-spacing: normal;
+        margin-bottom: 2px;
+    } 
+    
+    .image-wrapper1{
+        display: none;
+    }
+
+    .image-wrapper2 img{
+        filter: blur(2px)
+    }
+
+    .slide-content h1{
+        font-size: 10px;
+    }
 
     .slide-content .header, .slide-content .description{
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     .slide-content .description{
-        font-size: small;
+        font-size: 11px;
     }
 
     .slide-content .buttons{
         padding: 2px 8px;
-        font-size: small;
+        font-size: 10px;
     }
 }
 

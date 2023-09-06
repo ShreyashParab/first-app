@@ -24,19 +24,18 @@ const Hero = () =>{
                     </div>
                     <div className="image-wrapper2">
                         <img src={img1} alt="image1" />
+                        <div className="slide-content">
+                            <h1 className="header">Arch Design Studio</h1>
+                            <p className="sub-header">A very Personal Approach to Every Client</p>
+                            <p className="description">Elegant Solutions to Complex Problems</p>
+                            <div className="buttons">
+                                <a href="#" className="btn">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-
-                {/* <div className="slide-content">
-                    <h2 className="header">Tourist Design Studio</h2>
-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget leo sapien. Suspendisse potenti. Aenean vel tellus facilisis, rutrum mi</p>
-                    <div className="buttons">
-                        <a href="#" className="btn">
-                            Button
-                        </a>
-                    </div>
-                </div> */}
             </div>
             <div className="item">
                 <div className="images">
@@ -45,17 +44,18 @@ const Hero = () =>{
                     </div>
                     <div className="image-wrapper2">
                         <img src={img2} alt="image2" />
+                        <div className="slide-content">
+                            <h1 className="header">Arch Design Studio</h1>
+                            <p className="sub-header">A very Personal Approach to Every Client</p>
+                            <p className="description">Elegant Solutions to Complex Problems</p>
+                            <div className="buttons">
+                                <a href="#" className="btn">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {/* <div className="slide-content">
-                    <h2 className="header">Tourist Design Studio</h2>
-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget leo sapien. Suspendisse potenti. Aenean vel tellus facilisis, rutrum mi</p>
-                    <div className="buttons">
-                        <a href="#" className="btn">
-                            Button
-                        </a>
-                    </div>
-                </div> */}
             </div>
             <div className="item">
                 <div className="images">
@@ -64,17 +64,18 @@ const Hero = () =>{
                     </div>
                     <div className="image-wrapper2">
                         <img src={img3} alt="image3" />
+                        <div className="slide-content">
+                            <h1 className="header">Arch Design Studio</h1>
+                            <p className="sub-header">A very Personal Approach to Every Client</p>
+                            <p className="description">Elegant Solutions to Complex Problems</p>
+                            <div className="buttons">
+                                <a href="#" className="btn">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {/* <div className="slide-content">
-                    <h2 className="header">Tourist Design Studio</h2>
-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget leo sapien. Suspendisse potenti. Aenean vel tellus facilisis, rutrum mi</p>
-                    <div className="buttons">
-                        <a href="#" className="btn">
-                            Button
-                        </a>
-                    </div>
-                </div> */}
             </div>
         </OwlCarousel>
         </div>
