@@ -13,21 +13,21 @@ const Card = () =>{
                 <div className="logo">
                     <img src={img1} alt="image1"/>
                 </div>
-                <h3 className="header">Bookings</h3>
+                <h3 className="header">Design & Planning</h3>
                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu.</p>
             </div>
             <div className="card">
                 <div className="logo">
                     <img src={img2} alt="image1"/>
                 </div>
-                <h3 className="header">Planning</h3>
+                <h3 className="header">Interior Design</h3>
                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu.</p>
             </div>
             <div className="card">
                 <div className="logo">
                     <img src={img3} alt="image1"/>
                 </div>
-                <h3 className="header">Management</h3>
+                <h3 className="header">Exterior Design</h3>
                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu.</p>
             </div>
         </div>

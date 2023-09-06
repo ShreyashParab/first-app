@@ -1,37 +1,60 @@
 .cards{
-    position: fixed;
     display: flex;
     justify-content: center;
-    bottom: 6%;
-    /* left: 1%; */
-    z-index: 1;
-    padding: 10px;
 }
 
 .card{
-    /* width: 350px; */
-    /* max-width: 300px; */
-    height: 150px;
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
+    width: 250px;
     text-align: center;
-    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+    margin: 10px;
+    padding: 40px;
+}
+
+.logo{
+    margin-bottom: 10px;
+}
+
+.description{
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .card:hover{
-    transform: translateY(-3px);
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.card .header{
-    margin-top: 3px;
-    margin-bottom: 5px;
+    transform: translateY(-5px);
 }
 
 @media (max-width:900px){
     .cards{
-        position: static;
         flex-wrap: wrap;
+        z-index: 0;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .cards{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .cards{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .cards{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px) {
+    .cards{
+        margin-top: 10%;
     }
 }

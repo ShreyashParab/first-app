@@ -25,7 +25,7 @@
 }
 
 .owl-carousel .owl-item img{
-    height: 500px;
+    height: 520px;
 }
 
 .owl-carousel .owl-nav button.owl-next{
@@ -106,7 +106,7 @@
     }
 
     .owl-carousel .owl-item img{
-        height: 340px;
+        height: 40vh;
     }
     
     .owl-carousel .owl-nav button.owl-next{
