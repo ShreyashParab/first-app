@@ -6,31 +6,33 @@ import "./navbar.css"
 let toggleon = false
 
 const Navbar = () =>{
-    const screenWidth = window.innerWidth
-        if(screenWidth > 900)
-        {
-            document.getElementById('links').style.display='block'
-        }
-    function toggle(){
-
-        if(screenWidth <= 900)
-        {
+    
+    function toggle(){    
             if(toggleon == false)
             {
                 document.getElementById('links').style.display='block'
+                document.getElementById('social-media').style.display='block'
                 toggleon = true
             }
             else{
                 document.getElementById('links').style.display='none'
-                toggleon = false
-            }
-        }
-        else{
-            document.getElementById('links').style.display='block'
-            toggleon=false
-        }
-        
+                document.getElementById('social-media').style.display='none'
+                toggleon = false    
+           }
+           
     }
+    window.addEventListener('resize', () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 901) {
+          toggleon = true;
+          document.getElementById('links').style.display = 'block';
+          document.getElementById('social-media').style.display='block'
+        } else {
+          toggleon = false;
+          document.getElementById('links').style.display = 'none';
+          document.getElementById('social-media').style.display='none'
+        }
+      });
     return(
         <>
             <nav className='nav' id='nav'>
@@ -55,7 +57,7 @@ const Navbar = () =>{
                         <li className='search'><BsSearch/></li>
                     </ul>
                 </div>
-                <div className='social-media'>
+                <div className='social-media' id='social-media'>
                     <ul>
                         <li><a href='#'><BiLogoFacebook/></a></li>
                         <li><a href='#'><BiLogoTwitter/></a></li>

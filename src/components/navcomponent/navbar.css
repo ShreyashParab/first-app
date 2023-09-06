@@ -116,7 +116,7 @@ ul li a:hover{
     }
 
     .nav .social-media{
-        display: block;
+        display: none;
         position: fixed;
         top: 93%;
         z-index: 3;

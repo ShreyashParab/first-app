@@ -17,7 +17,7 @@ const Hero = () =>{
         nav
         >
             <div className="item">
-                <img src={img1} alt="image1"/>
+                    <img src={img1} alt="image1"/>
                 <div className="slide-content">
                     <h2 className="header">Tourist Design Studio</h2>
                     <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget leo sapien. Suspendisse potenti. Aenean vel tellus facilisis, rutrum mi</p>
