@@ -21,7 +21,7 @@
 }
 
 .image-wrapper2 img{
-    filter: blur(20px);
+    filter: opacity(0.2);
 }
 
 .owl-carousel .owl-item img{
@@ -89,7 +89,7 @@
     margin-top: 10px;
     background-color:#2a2a2a;
     display: inline-block;
-    padding: 3px 20px;
+    padding: 2px 8px;
     border-radius: 2px;
     cursor: pointer;
     text-transform: uppercase;
@@ -102,7 +102,7 @@
 
 @media (max-width:600px){
     .hero{
-        height: 40vh;
+        height: 55vh;
     }
     
     .slider{
@@ -110,19 +110,21 @@
     }
 
     .owl-carousel .owl-item img{
-        height: 40vh;
+        height: 55vh;
     }
     
     .owl-carousel .owl-nav button.owl-next{
+        top:35%;
         right: 4%;
     }
 
     .owl-carousel .owl-nav button.owl-prev{
+        top: 35%;
         left: 4%;
     }
 
     .slide-content{
-        top: 20%;
+        top: 22%;
         width: 60%;   
         text-align: center;
         right: 20%;
@@ -135,7 +137,8 @@
     .item .images .image-wrapper2 .slide-content .sub-header{
         font-size: 15px;
         letter-spacing: normal;
-        margin-bottom: 2px;
+        margin-bottom: 10px;
+        opacity: 1;
     } 
     
     .image-wrapper1{
@@ -143,7 +146,7 @@
     }
 
     .image-wrapper2 img{
-        filter: blur(2px)
+        filter: opacity(0.2);
     }
 
     .slide-content h1{
@@ -156,6 +159,7 @@
 
     .slide-content .description{
         font-size: 11px;
+        opacity: 1;
     }
 
     .slide-content .buttons{
