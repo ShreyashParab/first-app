@@ -47,14 +47,12 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
     .cards{
-        margin-top: 8%;
+        margin-top: 7%;
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 400px) {
-    .cards{
-        margin-top: 10%;
-    }
-}
+
+
+

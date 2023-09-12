@@ -141,6 +141,7 @@ ul li a:hover{
 
     .nav .links li:hover .dropdown{
         display: block;
+        position: absolute;
     }
 
     ul li a:hover{

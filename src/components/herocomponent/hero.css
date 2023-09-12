@@ -125,17 +125,17 @@
 
     .slide-content{
         top: 22%;
-        width: 60%;   
+        width: 62%;   
         text-align: center;
         right: 20%;
     }
 
     .item .images .image-wrapper2 .slide-content .header{
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .item .images .image-wrapper2 .slide-content .sub-header{
-        font-size: 15px;
+        font-size: 17px;
         letter-spacing: normal;
         margin-bottom: 10px;
         opacity: 1;
@@ -158,14 +158,20 @@
     }
 
     .slide-content .description{
-        font-size: 11px;
+        font-size: 13px;
         opacity: 1;
     }
 
     .slide-content .buttons{
         padding: 2px 8px;
-        font-size: 10px;
+        font-size: 12px;
     }
+}
+
+@media screen and (min-width: 700px) and (max-width: 835px) {
+    .slide-content{
+        top: 15%;
+    }    
 }
 
 
